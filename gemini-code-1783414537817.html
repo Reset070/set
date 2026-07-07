@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>โปรไฟล์ส่วนตัวของฉัน</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .profile-card {
+            background: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            max-width: 450px;
+            width: 100%;
+            padding: 35px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .profile-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #4f46e5;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(79, 70, 229, 0.2);
+        }
+
+        .name {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 5px;
+        }
+
+        .job-title {
+            font-size: 1rem;
+            color: #4f46e5;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+        }
+
+        .bio {
+            font-size: 0.95rem;
+            color: #6b7280;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        .info-section {
+            text-align: left;
+            border-top: 1px solid #e5e7eb;
+            padding-top: 20px;
+        }
+
+        .info-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #1f2937;
+            margin-bottom: 10px;
+        }
+
+        .info-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+        }
+
+        .info-label {
+            color: #9ca3af;
+            font-weight: 500;
+        }
+
+        .info-value {
+            color: #374151;
+            font-weight: 600;
+        }
+
+        .social-links {
+            margin-top: 25px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .btn-contact {
+            display: inline-block;
+            background-color: #4f46e5;
+            color: white;
+            padding: 10px 24px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: background 0.2s ease;
+        }
+
+        .btn-contact:hover {
+            background-color: #4338ca;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-card">
+        <!-- รูปภาพโปรไฟล์ (เปลี่ยนลิงก์รูปภาพใน src ได้ตามต้องการ) -->
+        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=500&auto=format&fit=crop&q=60" alt="รูปโปรไฟล์ของคุณ" class="profile-img">
+        
+        <!-- ข้อมูลชื่อและตำแหน่ง -->
+        <h1 class="name">สมชาย ใจดี</h1>
+        <p class="job-title">Web Developer / Designer</p>
+        
+        <!-- ประวัติย่อ -->
+        <p class="bio">
+            สวัสดีครับ! ผมเป็นนักพัฒนาเว็บไซต์ที่หลงใหลในการสร้างสรรค์หน้าเว็บที่สวยงามและใช้งานง่าย มีประสบการณ์ในการเขียน HTML, CSS, และ JavaScript พร้อมเปิดรับโอกาสใหม่ๆ ในการทำงานร่วมกันเสมอครับ
+        </p>
+        
+        <!-- รายละเอียดข้อมูลส่วนตัว -->
+        <div class="info-section">
+            <h3 class="info-title">ข้อมูลส่วนตัว</h3>
+            
+            <div class="info-item">
+                <span class="info-label">อายุ:</span>
+                <span class="info-value">25 ปี</span>
+            </div>
+            
+            <div class="info-item">
+                <span class="info-label">อีเมล:</span>
+                <span class="info-value">somchai.j@example.com</span>
+            </div>
+            
+            <div class="info-item">
+                <span class="info-label">เบอร์โทร:</span>
+                <span class="info-value">089-123-4567</span>
+            </div>
+            
+            <div class="info-item">
+                <span class="info-label">ที่อยู่:</span>
+                <span class="info-value">กรุงเทพฯ, ประเทศไทย</span>
+            </div>
+        </div>
+
+        <!-- ปุ่มสำหรับติดต่อ -->
+        <div class="social-links">
+            <a href="mailto:somchai.j@example.com" class="btn-contact">ติดต่องาน</a>
+        </div>
+    </div>
+
+</body>
+</html>
